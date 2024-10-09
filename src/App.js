@@ -2,7 +2,7 @@ import React from "react";
 import LoginPage from "./Pages/LoginPage";
 import Home from "./Pages/Home";
 import SignupPage from "./Pages/SignupPage";
-
+import CartPage from "./Pages/CartPage";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -25,6 +25,11 @@ const router = createBrowserRouter([
     path: "/signup",
     element:<SignupPage/>
   },
+  {
+    path: "/cart",
+    element:<CartPage/>
+  },
+
 ]);
 
 function App() {
