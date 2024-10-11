@@ -9,6 +9,8 @@ import {
   Route,
   Link,
 } from "react-router-dom";
+import Cheakouts from "./Pages/Cheakouts";
+import ProductDetail from "./features/ProductLists/Component/ProductDetail";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +30,14 @@ const router = createBrowserRouter([
   {
     path: "/cart",
     element:<CartPage/>
+  },
+  {
+    path: "/cheakout",
+    element:<Cheakouts/>
+  },
+  {
+    path: "/productdetail",
+    element:<ProductDetail/>
   },
 
 ]);
